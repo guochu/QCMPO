@@ -7,7 +7,7 @@
 # 	return Dict("x"=>s_x, "y"=>s_y, "z"=>s_Z, "+"=>s_SP, "-"=>s_SM)
 # end
 function _spinless_operators()
-	p = Hamiltonians.spin_half_matrices()
+	p = GeneralHamiltonians.spin_half_matrices()
 	p = Dict(k=>convert(AbelianMatrix, v) for (k, v) in p)
 	sp, sm, z = p["+"], p["-"], p["z"]
 	I2 = one(z)

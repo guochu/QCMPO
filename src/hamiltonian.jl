@@ -54,7 +54,7 @@ end
 # function twobody(pos1::Int, pos2::Int, c::AllowedCoefficient, symmetry::FermionicSymmetry)
 # 	min_pos = min(pos1, pos2) - 1
 # 	t = twobody_util(pos1 - min_pos, pos2 - min_pos, c, symmetry)
-# 	return Hamiltonians.shift(t, min_pos)
+# 	return shift(t, min_pos)
 # end
 
 # function twobody_util(pos1::Int, pos2::Int, c::AllowedCoefficient, symmetry::FermionicSymmetry)
@@ -73,7 +73,7 @@ end
 # function fourbody(pos1::Int, pos2::Int, pos3::Int, pos4::Int, v::AllowedCoefficient, symmetry::FermionicSymmetry)
 # 	min_pos = min(pos1, pos2, pos3, pos4) - 1
 # 	t = fourbody_util(pos1 - min_pos, pos2 - min_pos, pos3 - min_pos, pos4 - min_pos, v, symmetry)
-# 	return Hamiltonians.shift(t, min_pos)
+# 	return shift(t, min_pos)
 # end
 
 # function fourbody_util(pos1::Int, pos2::Int, pos3::Int, pos4::Int, v::AllowedCoefficient, symmetry::FermionicSymmetry)

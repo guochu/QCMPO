@@ -7,7 +7,7 @@ export hamiltonian
 export qcmpo
 
 using Reexport
-@reexport using DMRG, Hamiltonians
+@reexport using DMRG, GeneralHamiltonians
 
 
 # interface for quantum chemistry
