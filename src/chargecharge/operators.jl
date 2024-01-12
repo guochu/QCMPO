@@ -243,6 +243,6 @@ function qcmpo(h1e::AbstractMatrix{<:Real}, h2e::AbstractArray{<:Real, 4}, symme
 		mpo[i] = Wj
 	end
 	mpo = convert_to_mpotensors(mpo)
-	mpo = [SparseMPOTensor(m) for m in mpo]
+	mpo = [SparseMPOTensor(m, Float64, u1u1_space) for m in mpo]
 	return MPOHamiltonian(mpo)
 end
