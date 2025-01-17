@@ -6,7 +6,7 @@ export hamiltonian
 # interface for quantum chemistry hamiltonian
 export qcmpo
 
-using Reexport
+using Reexport, TensorKit
 @reexport using DMRG, GeneralHamiltonians
 
 
